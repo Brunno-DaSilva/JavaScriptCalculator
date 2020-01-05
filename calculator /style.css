@@ -1,0 +1,64 @@
+/*Style Sheer*/
+
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-weight: normal;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background: #16BFFD;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #CB3066, #16BFFD);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #CB3066, #16BFFD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.container{
+    display: grid; 
+    justify-content: center; 
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.container > button{
+    cursor: pointer; 
+    font-size: 2rem; 
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255, 255, 255, .75);
+}
+
+.container > button:hover{
+    background-color: rgba(255, 255, 255, .9);
+}
+
+.span-two{
+    grid-column: span 2;
+}
+
+.output{
+    grid-column: 1 / -1;
+    background-color: #1d1c1cdd; 
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;    
+    word-break: break-all;
+    border-radius: 4px;
+}
+.output .previous-openrand{
+    color: #ffffff72;
+    font-size: 1.5rem;
+}
+
+.output .current-openrand{
+    color: #ffffff;
+    font-size: 2.5rem;
+}
