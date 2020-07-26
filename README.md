@@ -3,4 +3,4 @@
 Calculator built with Vanila JavaScript
 
 
-## Demo: https://dasilvabrunotexas.github.io/JavaScriptCalculator/calculator/
+### Demo: https://brunno-dasilva.github.io/JavaScriptCalculator/calculator/
